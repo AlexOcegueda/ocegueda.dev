@@ -1,6 +1,7 @@
 ---
 import Nav from "../components/nav.astro";
-import Background from "./background.css";
+import background from "./background.css";
+import global from "../styles/global.css";
 const { title = "My Cool Astro Site", description = "Welcome to my minimalist Astro build." } = Astro.props;
 ---
 <style>
@@ -19,8 +20,9 @@ const { title = "My Cool Astro Site", description = "Welcome to my minimalist As
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
 
-		<link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href={Background} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={global} />
+    <link rel="stylesheet" href={background} />
 	</head>
 
 	<body>
