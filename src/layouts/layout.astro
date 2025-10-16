@@ -1,0 +1,45 @@
+---
+import Nav from "../components/nav.astro";
+import Background from "./background.css";
+const { title = "My Cool Astro Site", description = "Welcome to my minimalist Astro build." } = Astro.props;
+---
+<style>
+  
+</style>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<!-- Open Graph / social tags -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+
+		<link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Background} />
+	</head>
+
+	<body>
+		<header>
+			<Nav></Nav> 
+		</header>
+
+    <main>
+      <slot />
+      <pre class="ascii-bg">
+      ^-^  / \```-_-```|__============\\
+     ( *w*)   \```-_-```   =============]]
+     c(")(")`-`)```-_-```|--(x)-----(x)--|
+      </pre>
+		</main>
+
+		<footer>
+			<p>© {new Date().getFullYear()} </p>
+		</footer>
+	</body>
+</html>
+
