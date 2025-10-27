@@ -1,10 +1,13 @@
 <style>
   nav {
     display: flex;
-   }
+  }
 
-  a, li {
+  a {
     display: block;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
   }
 
   ul {
@@ -13,14 +16,18 @@
 
   li {
     list-style: none;
-		text-decoration: none;
     margin-right: 5px;
   }
-</style>
 
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>	
-		<li><a href="/about">About</a></li>
-	</ul>
-</nav>
+  #nav-item {
+    margin-top: 1rem;
+    font-weight: 1000;
+  }
+</style>
+  <div><a id="nav-item">Ocegueda</a></div>
+  <nav>
+    <ul class="main">
+      <li><a id="nav-item" href="/">Home</a></li>	
+      <li><a id="nav-item" href="/about">About</a></li>
+    </ul>
+  </nav>

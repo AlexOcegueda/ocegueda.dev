@@ -2,46 +2,60 @@
 import Nav from "../components/nav.astro";
 import background from "./background.css";
 import global from "../styles/global.css";
-const { title = "My Cool Astro Site", description = "Welcome to my minimalist Astro build." } = Astro.props;
+const { title = "Alex Ocegueda Castro Portfolio", description = "Welcome to the other side of sanity." } = Astro.props;
 ---
 <style>
-  
+	footer {
+		display: flex;
+		justify-content: center;
+	}
+
+
 </style>
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{title}</title>
-		<meta name="description" content={description} />
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>{title}</title>
+			<meta name="description" content={description} />
 
-		<!-- Open Graph / social tags -->
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
-		<meta property="og:type" content="website" />
+			<!-- Open Graph / social tags -->
+			<meta property="og:title" content={title} />
+			<meta property="og:description" content={description} />
+			<meta property="og:type" content="website" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href={global} />
-    <link rel="stylesheet" href={background} />
-	</head>
+			<link rel="icon" href="/favicon.ico" />
+			<link rel="stylesheet" href={global} />
+			<link rel="stylesheet" href={background} />
+		</head>
 
-	<body>
-		<header>
-			<Nav></Nav> 
-		</header>
+		<body>
+			<header>
+				<Nav></Nav> 
+			</header>
 
-    <main>
-      <slot />
-      <pre class="ascii-bg">
-      ^-^  / \```-_-```|__============\\
-     ( *w*)   \```-_-```   =============]]
-     c(")(")`-`)```-_-```|--(x)-----(x)--|
-      </pre>
-		</main>
+			<main>
+				<slot />
+        <!--				<pre class="ascii-bg">
+ ^-^  / \```-_-```|__============\\
+( *w*)   \```-_-```   =============]]
+c(")(")`-`)```-_-```|--(x)-----(x)--|
+||=[__]=||\       /_________________
+||======|| \:-"""-.                 
+||======||\ /-=-*  \----------------.
+||======||(_|o o/  |_  - - - - - - .`
+||======||  / " \  ,_)----------   -
+||======||  \_^_/_/-   - - - - - - `.
+||=[__]=||____/  )|- - - - - - - -..
+||==\___________/ |- - - - - - - - -
+</pre>
+-->
+			</main>
 
-		<footer>
-			<p>© {new Date().getFullYear()} </p>
-		</footer>
-	</body>
-</html>
+			<footer>
+				<p>© {new Date().getFullYear()} Alex Ocegueda Castro </p>
+			</footer>
+		</body>
+	</html>
 
