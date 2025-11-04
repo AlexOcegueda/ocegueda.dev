@@ -13,16 +13,17 @@ body {
 
 .ascii-bg {
   position: fixed;        /* Stays put during scroll */
-  left: 0;
-  top: .5rem;
-  width: 100vw;           /* Full viewport width */
-  height: 100vh;          /* Full viewport height */
-  z-index: 0;            /* Behind all content */
-  overflow: hidden;       /* No scrollbars */
+  top: .1rem;
+  left: 2rem;
+  bottom: .1rem;
+  /*width: 100vw;         
+  height: 100vh;        
+  z-index: 0;           
+  overflow: hidden;      /*  No scrollbars */
   font-family: monospace;
-  font-size: 3rem;
-  line-height: 1;
-  white-space: pre;
+  font-size: 2em;
+  /*line-height: 1;
+  white-space: pre;*/
   color: rgba(0, 0, 0, 0.08);
   pointer-events: none;   /* Doesn't block clicks */
   user-select: none;      /* Prevent accidental selection */
