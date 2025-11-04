@@ -21,7 +21,7 @@ body {
   overflow: hidden;       /* No scrollbars */
   font-family: monospace;
   font-size: 3rem;
-  line-height: 1.2;
+  line-height: 1;
   white-space: pre;
   color: rgba(0, 0, 0, 0.08);
   pointer-events: none;   /* Doesn't block clicks */

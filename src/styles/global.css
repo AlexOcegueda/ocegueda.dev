@@ -9,3 +9,8 @@ li {
   list-style: none;
   text-decoration: none;
 }
+
+:root {
+  font-family: "Fira Code", monospace;
+}
+

@@ -4,13 +4,17 @@ import background from "../layouts/background.astro";
 ---
 <style>
 	h1  {
-		font-size: 10rem;
-		padding-bottom: 8rem;
+		font-size: 8rem;
+		padding-bottom: 3rem;
 		margin-left: .5rem;
 	}
-
+	
+	h2 {
+		display: flex;
+		align-self: flex-end;
+	}
 	sup {
-		font-size: 5rem;
+		font-size: 3rem;
 	}
   
   nav {
@@ -21,8 +25,9 @@ import background from "../layouts/background.astro";
   
 	.castro {
 		display: block;
-		text-align: left;
-		font-size: 8rem;
+		text-align: right;
+		font-size: 4rem;
+		margin-right: 2rem;
 	}
 
 	p {
@@ -59,19 +64,21 @@ import background from "../layouts/background.astro";
     list-style: none;
     display: block;
     text-decoration: none;
-  }
+ 		cursor: pointer;
+	}
 </style>
 
 	<Layout title="Home">
 		<h1><b>OCEGUEDA</b><sup>.dev</sup></h1>
 			<nav class="intro-container">
-        <h2><i>Castro<i></h2>
-        <ul>
-          <li><a class="project-nav-item">Web Crawling & NLK</a></li>
+        <h2><i class="castro">Castro<i></h2>
+        <ul> 
           <li><a class="project-nav-item">IT / Networking</a></li>
+					<li><a class="project-nav-item">Programming</a></li>
           <li><a class="project-nav-item">Mathematics</a></li>
           <li><a class="project-nav-item">Writing</a></li>
-        </ul>
+			 	  <li><a class="project-nav-item">Art</a></li>
+				</ul>
       </nav>
 	</Layout>
 
