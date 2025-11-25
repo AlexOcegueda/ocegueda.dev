@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/layout.astro";
+import { Image } from 'astro:assets';
+import cyberdeck from '../assets/cyberdeck.jpeg';
+---
+<Layout title="About">
+  <h1>IT & Programming</h1>
+  <div class="cd-container">
+    <p>Here is a Cyberdeck I built with a Raspberry Pi 4 and an ipad 2 using a VNC Server. </p>
+    <Image class="cyberdeck" alt="cyberdeck" src={cyberdeck}/>
+  </div>
+  <div class="p-container">
+    <ul>
+      <li><a href="https://climate-change-delta.vercel.app/">[Climate Change]</a> This is a website I made on Climate Change vs Global warming.</li>
+      <li><a href="http://alexocegueda.pythonanywhere.com/">[Phobia Finder]</a> This is an API I created to have a comprehensive list of phobias.<br> Currently gets 380+ visitor/calls a month.</li>
+    </ul>
+  </div>
+
+</Layout>
+
+<style>
+  a {
+  color: blue;
+
+  }
+  .cyberdeck {
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  }
+  .cd-container {
+  max-width: 900px;
+  margin: 2rem auto; /* Centers the container */
+  display: flex;
+  }
+  p {
+    margin-left: 1rem;
+    align-self: center;
+  }
+  .p-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: column;
+  }
+</style>
