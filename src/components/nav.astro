@@ -1,14 +1,18 @@
+---
+import resume from '../assets/resume.pdf';
+---
 <style>
   nav {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
   }
 
   a {
     display: block;
     text-decoration: none;
     color: black;
-    margin-left: 1rem;
   }
 
   ul {
@@ -23,10 +27,12 @@
   .nav-item {
     margin-top: 1rem;
     font-weight: 1000;
+    display: block;
   }
 
   .logo {
     display: block;
+    margin-left: .5rem;
   }
 
   .container {
@@ -43,7 +49,7 @@
     <a class="logo nav-item">AOC</a>
     <ul class="main">
       <li><a class="nav-item" href="/">Home</a></li>	
-      <li><a class="nav-item" href="/about">About</a></li>
-			<li><a class="nav-item edge" href="/github">Github</a></li>
+			<li><a class="nav-item" href="https://github.com/AlexOcegueda">Github</a></li>
+      <li><a class="nav-item" href={resume}></a>Resume</li>
     </ul>
   </nav>

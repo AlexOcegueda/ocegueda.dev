@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/layout.astro";
+import { Image } from 'astro:assets';
+import cyberdeck from '../assets/cyberdeck.jpeg';
+---
+<Layout title="About">
+  <h1>Mathematics</h1>
+
+  <div class="p-container">
+    <ul>
+      <li><a href="https://github.com/AlexOcegueda/latex-math-notes/tree/main/algebra-ii">[Algebra II Notes]</a> My Algebra II notes written in LaTeX that I tried to avoid jargon with.</li>
+      <li><a href="https://github.com/AlexOcegueda/latex-math-notes/tree/main/calculus">[Calculus Notes]</a> My Calculus notes written in LaTeX that I tried to avoid jargon with.</li>
+      <li><a href="https://github.com/AlexOcegueda/OSSU-Math/tree/main/Intro-Mathematical-Thinking">[Intro To Mathematical Thinking Notes]</a> My notes for MIT Courseware <a href="https://www.coursera.org/learn/mathematical-thinking/">course</a>.</li>
+      <li><a href="https://github.com/AlexOcegueda/ProjectEuler">[Project Euler]</a> My solutions to the first 100 project euler problems.</li>   
+    </ul>
+  </div>
+
+</Layout>
+
+<style>
+  a {
+  color: blue;
+
+  }
+  .cyberdeck {
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  }
+  .cd-container {
+  max-width: 900px;
+  margin: 2rem auto; /* Centers the container */
+  display: flex;
+  }
+  p {
+    margin-left: 1rem;
+    align-self: center;
+  }
+  .p-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: column;
+  }
+</style>
