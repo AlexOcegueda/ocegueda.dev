@@ -14,10 +14,9 @@ li {
   font-family: "Fira Code", monospace;
 }
 
-a:visited {
-  color: black;
+a, a:visited {
+  color: blue;
 }
-
 
 	h1  {
 		font-size: 3rem;
